@@ -1,0 +1,15 @@
+<html>
+<head>
+  <script type="text/javascript">
+  function uploadFile (event) {
+    event.preventDefault();
+    window.myfiles = event.dataTransfer.files;
+  }
+  </script>
+</head>
+<body>
+  <input id="uploadPanel" ondrop="uploadFile(event)">
+  </input>
+  <progress id="uploadProgress"></progress>
+</body>
+</html>
